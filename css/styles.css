@@ -1,0 +1,137 @@
+:root {
+    --primary-text-color: #757575; 
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primaty-bg-color: #FFFFFF;
+    --filterbutton-main-color: #212121;
+    --filterbutton-bg-color: #F5F4FA;}
+body {font-family: 'Roboto', sans-serif; color: var(--primary-text-color); background-color: var(--primaty-bg-color); font-size: 14px; letter-spacing: 0.03em}
+.list {list-style: none;}
+.link, .header-logo, .header-logo {text-decoration: none;}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;}
+
+/* --- Кнопки (часть) ---  */
+.hero-button, .filter-button {font-family: inherit; cursor: pointer;}
+.hero-button:hover, .hero-button:focus {box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); border-radius: 4px;}
+
+/* --- Логотип ---  */
+.header-logo {font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000}
+.logo-web {color: #2196F3;}
+
+/* --- Хэдер ---  */
+.nav-link {font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #000000;}
+.nav-link {color: #000000;}
+.nav-link.link.current {color: var(--accent-color)}
+.nav-link:hover, .nav-link:focus {color: var(--accent-color);}
+.header-contancts-links {font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;}
+.header-contancts-links:hover, .header-contancts-links:focus, 
+.map:hover, .footer-contacts:hover, .map:focus, .footer-contacts:focus {color: var(--accent-color);}
+
+/* --- Футер ---  */
+.footer {background: #2F303A;}
+.footer-logo-studio {color: var(--primaty-bg-color);}
+.map {font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primaty-bg-color)}
+.footer-contacts {font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);}
+.map:focus {color: var(--accent-color);}
+.footer-contacts:focus {color: var(--accent-color);}
+
+/* --- Hero ---  */
+.section-hero {background: #2F303A;}
+.hero-title {font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primaty-bg-color);}
+
+/* --- Hero Button ---  */
+.hero-button {font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primaty-bg-color);
+    background-color: var(--accent-color);
+    border-radius: 4px;}
+
+/* --- Тайтл секций ---  */
+.section-title {font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);}
+
+    /* --- Особенности ---  */
+.features-title {font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);}
+.features-text {line-height: 1.71;
+    color: var(--primary-text-color)}
+
+    /* --- Наша команда ---  */
+.section-team {background-color: #F5F4FA}
+.team-list .team-title {font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--title-text-color);}
+.team-job {font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--primary-text-color)}
+
+
+/* --- Filter Buttons ---  */
+.filter-button {font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--filterbutton-main-color);
+    background-color: var(--second-button-color);}
+.filter-button:hover, .filter-button:focus {
+    color: var(--filterbutton-bg-color);
+    background-color: var(--accent-color);}
+
+/* --- Portfolio ---  */
+.portfolio-title {font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color)}
+.portfolio-text {font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color)}
