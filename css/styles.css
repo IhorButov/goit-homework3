@@ -23,7 +23,7 @@ ul {margin: 0; padding-left: 0;}
 .list {list-style: none;}
 .link, .header-logo, .header-logo {text-decoration: none;}
 /* img {display: block; max-width: 100%; height: auto;} */
-.container {width: 1200px; padding-right; 0 15px; margin: 0 auto; outline: 2px solid red ;}
+.container {width: 1200px; padding: 0 15px; margin: 0 auto; outline: 2px solid red ;}
 
 .visually-hidden {
     position: absolute;
@@ -103,6 +103,9 @@ ul {margin: 0; padding-left: 0;}
     color: var(--primaty-bg-color);
     background-color: var(--accent-color);
     border-radius: 4px;}
+
+.hero-button-text {display: inline-block; width: 200p; height: 50px; padding-top: 10px; padding-left: 30px; padding-bottom: 10px; padding-right: 30px;}
+
 
 /* --- Тайтл секций ---  */
 .section-title {font-weight: 700;
