@@ -104,8 +104,6 @@ ul {margin: 0; padding-left: 0;}
     background-color: var(--accent-color);
     border-radius: 4px;}
 
-.hero-button-text {display: inline-block; width: 200p; height: 50px; padding-top: 10px; padding-left: 30px; padding-bottom: 10px; padding-right: 30px;}
-
 
 /* --- Тайтл секций ---  */
 .section-title {font-weight: 700;
