@@ -21,7 +21,7 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .address {font-style: normal;}
 
 .list {list-style: none; margin: 0; padding-left: 0;}
-.link, .header-logo, .header-logo {text-decoration: none;}
+.link, .header-logo, .header-logo {text-decoration: none; margin-right: 90px;}
 
 /* img {display: block; max-width: 100%; height: auto;} */
 .container {width: 1200px; padding: 0 15px; margin: 0 auto; outline: 2px solid red;}
@@ -66,7 +66,18 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: #757575;}
 .header-contancts-links:hover, .header-contancts-links:focus, 
 .map:hover, .footer-contacts:hover, .map:focus, .footer-contacts:focus {color: var(--accent-color);}
-.container {display: flex;}
+.header-nav, .header-contacts {display: flex;}
+
+
+.header-nav .nav-link {display: block;}
+.header-nav .header-item:not(:last-child) {margin-right: 50px;}
+.main-nav {display: flex;}
+
+
+.header-contacts {display: flex;}
+.header-contacts .header-item + .header-item {margin-left: 50px;}  
+/* .header-contacts .header-item:not(:last-child) {margin-right: 50px;} */
+
 
 
 /* --- Футер ---  */
@@ -130,9 +141,17 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .features-text {line-height: 1.71;
     color: var(--primary-text-color)}
 .comtainer.benefits {margin-bottom: 94px;}
+.features-list {display: inline-flex;}
+
+
+/* --- Галерея --- */
+.gallery-list {display: inline-flex;}
+.gallery-list .gallery-item:not(last-child) {margin-right: 30px;}
+
 
     /* --- Наша команда ---  */
 .section-team {background-color: #F5F4FA}
+.team-list {display: inline-flex;}
 .team-list .team-title {font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
