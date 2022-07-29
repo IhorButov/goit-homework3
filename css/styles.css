@@ -66,6 +66,8 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: #757575;}
 .header-contancts-links:hover, .header-contancts-links:focus, 
 .map:hover, .footer-contacts:hover, .map:focus, .footer-contacts:focus {color: var(--accent-color);}
+.container {display: flex;}
+
 
 /* --- Футер ---  */
 .footer {background: var(--footer-background-color)}
@@ -82,7 +84,7 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .footer-contacts:focus {color: var(--accent-color);}
 
 /* --- Hero ---  */
-.section-hero {background: var(--hero-background-color);}
+.section-hero {background: var(--hero-background-color); text-align: center;}
 .hero-title {padding: 200px 238px 30px 238px; margin-bottom: 30px; font-weight: 900;
     font-size: 44px;
     line-height: 1.5;
@@ -90,14 +92,11 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);}
-.hero-title-text {margin: 0 auto;}
-.hero-button-text {margin: 0 auto;}
-
-
 
 
 /* --- Hero Button ---  */
-.hero-button {    font-weight: 700;
+.hero-button {display: inline-block;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     padding: 10px 32px;
@@ -107,7 +106,11 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: var(--primaty-bg-color);
     background-color: var(--accent-color);
     border-radius: 4px;
+    margin-left: 700px;
+    margin-bottom: 200px;
+    margin-right: 700px;
     margin: 0 auto;}
+
 
 
 /* --- Тайтл секций ---  */
@@ -126,6 +129,7 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: var(--title-text-color);}
 .features-text {line-height: 1.71;
     color: var(--primary-text-color)}
+.comtainer.benefits {margin-bottom: 94px;}
 
     /* --- Наша команда ---  */
 .section-team {background-color: #F5F4FA}
