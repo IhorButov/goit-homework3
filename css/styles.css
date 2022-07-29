@@ -69,17 +69,6 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .header-nav, .header-contacts {display: flex;}
 
 
-.header-nav .nav-link {display: block;}
-.header-nav .header-item:not(:last-child) {margin-right: 50px;}
-.main-nav {display: flex;}
-
-
-.header-contacts {display: flex;}
-.header-contacts .header-item + .header-item {margin-left: 50px;}  
-/* .header-contacts .header-item:not(:last-child) {margin-right: 50px;} */
-
-
-
 /* --- Футер ---  */
 .footer {background: var(--footer-background-color)}
 .footer-logo-studio {color: var(--primaty-bg-color);}
