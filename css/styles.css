@@ -91,6 +91,9 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .map:focus {color: var(--accent-color);}
 .footer-contacts:focus {color: var(--accent-color);}
 .footer-logo {display: block; padding-top: 60px}
+.address {padding-bottom: 60px;}
+.footer-logo {margin-bottom: 20px;}
+.address-list .adress-item:not(last-child) {margin-bottom: 9px;}
 
 
 /* --- Hero ---  */
