@@ -10,25 +10,26 @@
     --primaty-bg-color: #FFFFFF;
     --section-background-color: #CCCCCC;
     --filterbutton-main-color: #212121;
-    --filterbutton-bg-color: #F5F4FA;}
+    --filterbutton-bg-color: #F5F4FA;
+    --filterbutton-secondbg-color: #2196F3;}
 
 html {box-sizing: border-box;}
 *, *::before, *::after {box-sizing: border-box;}
 body {font-family: 'Roboto', sans-serif; color: var(--primary-text-color); background-color: var(--primaty-bg-color); font-size: 14px; letter-spacing: 0.03em}
-
+img {display: block;
+    max-width: 100%;
+    height: auto;}
 
 p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .address {font-style: normal;}
 
 .list {list-style: none; margin: 0; padding-left: 0;}
-.link, .header-logo, .header-logo {text-decoration: none; margin-right: 90px;}
+.link, .header-logo {text-decoration: none;}
 
-/* img {display: block; max-width: 100%; height: auto;} */
 .container {width: 1200px; padding: 0 15px; margin: 0 auto; outline: 2px solid red;}
 .container-second {width: 1200px; padding: 0 15px; margin: 0 auto; outline: 2px solid red;}
 
-.visually-hidden {
-    position: absolute;
+.visually-hidden {position: absolute;
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -40,17 +41,17 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     margin: -1px;}
 
 /* --- Кнопки (часть) ---  */
-.hero-button, .filter-button {display: inline-block; font-family: inherit; cursor: pointer; border: 0;}
+.hero-button, .filter-button {display: border-box; font-family: inherit; cursor: pointer; border: 0;}
 .hero-button:hover, .hero-button:focus {box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); border-radius: 4px;}
 
 /* --- Логотип ---  */
-.header-logo {font-family: 'Raleway';
+.header-logo {display: inline-block; margin-right: 93px;
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--logo-primary-text);}
 .logo-web {color: var(--accent-color);}
-
 
 /* --- Хэдер ---  */
 .nav-link {font-weight: 500;
@@ -66,7 +67,14 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: #757575;}
 .header-contancts-links:hover, .header-contancts-links:focus, 
 .map:hover, .footer-contacts:hover, .map:focus, .footer-contacts:focus {color: var(--accent-color);}
-.header-nav, .header-contacts {display: flex;}
+.header-nav, .header-nav-list, .features-list, .header-contacts {display: flex; align-items: center;}
+.header-nav {padding-top: 24px; padding-bottom: 24px;}
+.header-nav-list {margin-right: auto;}
+.header .container {display: flex; align-items: center;}
+.header-nav .nav-link {padding-top: 10px; padding-bottom: 10px;}
+.header-contacts .header-contancts-links {padding-top: 10px; padding-bottom: 10px;}
+.header-nav-list, .header-contacts {gap: 50px}
+.header-nav {margin-right: 330px;}
 
 
 /* --- Футер ---  */
@@ -82,10 +90,12 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: var(--footer-contacts-color);}
 .map:focus {color: var(--accent-color);}
 .footer-contacts:focus {color: var(--accent-color);}
+.footer-logo {display: block; padding-top: 60px}
+
 
 /* --- Hero ---  */
 .section-hero {background: var(--hero-background-color); text-align: center;}
-.hero-title {padding: 200px 238px 30px 238px; margin-bottom: 30px; font-weight: 900;
+.hero-title {padding: 200px 238px 0px 238px; margin-bottom: 30px; font-weight: 900;
     font-size: 44px;
     line-height: 1.5;
     text-align: center;
@@ -105,42 +115,38 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     letter-spacing: 0.06em;
     color: var(--primaty-bg-color);
     background-color: var(--accent-color);
-    border-radius: 4px;
-    margin-left: 700px;
-    margin-bottom: 200px;
-    margin-right: 700px;
-    margin: 0 auto;}
-
-
+    border-radius: 4px;}
 
 /* --- Тайтл секций ---  */
-.section-title {font-weight: 700;
+.section-title {margin-bottom: 50px; font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     color: var(--title-text-color);}
+.section-title.team-title {padding-top: 94px;}
 
     /* --- Особенности ---  */
-.features-title {font-weight: 700;
+.features-title {margin-bottom: 10px;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);}
-.features-text {line-height: 1.71;
+.features-text {max-width: 270px; line-height: 1.71;
     color: var(--primary-text-color)}
 .comtainer.benefits {margin-bottom: 94px;}
-.features-list {display: inline-flex;}
-
+.features-list {display: inline-flex; padding: 94px 0;}
+.features-list .features-text:not(last-child) {margin-right: 30px;}
 
 /* --- Галерея --- */
-.gallery-list {display: inline-flex;}
+.gallery-list {display: inline-flex; padding-bottom: 94px;}
 .gallery-list .gallery-item:not(last-child) {margin-right: 30px;}
 
 
     /* --- Наша команда ---  */
 .section-team {background-color: #F5F4FA}
-.team-list {display: inline-flex;}
+.team-list {display: inline-flex; padding-bottom: 94px}
 .team-list .team-title {font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -150,22 +156,28 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    color: var(--primary-text-color)}
-
+    color: var(--primary-text-color);}
+.team-list .list-item:not(last-child) {margin-right: 30px;}
+.container-job {padding: 30px 5px;}
+.list-item {background-color: var(--primaty-bg-color);}
 
 /* --- Filter Buttons ---  */
-.filter-button {font-weight: 500;
+.filter-button {padding: 6px 22px; font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    border-radius: 4px;
     color: var(--filterbutton-main-color);
-    background-color: var(--second-button-color);}
+    background-color: var(--filterbutton-bg-color);}
 .filter-button:hover, .filter-button:focus {
     color: var(--filterbutton-bg-color);
-    background-color: var(--accent-color);}
+    background-color: var(--filterbutton-secondbg-color);}
+.filter-button-list {display: flex; padding-top: 94px; margin-bottom: 50px; justify-content: center;}
+.filter-button-list .button-item:not(last-child) {margin-right: 8px;}
 
 /* --- Portfolio ---  */
-.portfolio-title {font-weight: 700;
+.portfolio-title {margin-bottom: 4px;
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -173,3 +185,8 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .portfolio-text {font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color)}
+    .portfolio-list {display: flex; flex-wrap: wrap;} 
+.portfolio-container {border: 1px solid #eeeeee;}
+
+.portfolio-list {padding-bottom: 94px;}
+.portfolio-container {padding: 20px 24px;}
