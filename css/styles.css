@@ -113,8 +113,7 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     font-size: 16px;
     line-height: 1.87;
     padding: 10px 32px;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 200px;
     letter-spacing: 0.06em;
     color: var(--primaty-bg-color);
     background-color: var(--accent-color);
@@ -138,7 +137,8 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: var(--title-text-color);}
 .features-text {max-width: 270px; line-height: 1.71;
     color: var(--primary-text-color)}
-.comtainer.benefits {margin-bottom: 94px;}
+.features-head {width: 270px}
+
 .features-list {display: inline-flex; padding: 94px 0;}
 .features-list .features-text:not(last-child) {margin-right: 30px;}
 
