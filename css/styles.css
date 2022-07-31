@@ -124,7 +124,7 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     line-height: 1.16;
     text-align: center;
     color: var(--title-text-color);}
-.section-title.team-title {padding-top: 94px;}
+.section-title.team-title {padding-top: 94px; margin-bottom: 50px;}
 
     /* --- Особенности ---  */
 .features-title {margin-bottom: 10px;
@@ -149,7 +149,9 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     /* --- Наша команда ---  */
 .section-team {background-color: #F5F4FA}
 .team-list {display: inline-flex; padding-bottom: 94px}
-.team-list .team-title {font-weight: 500;
+.team-list .team-title {
+    width: ((100% - 90px) / 4);
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -162,6 +164,7 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .team-list .list-item:not(last-child) {margin-right: 30px;}
 .container-job {padding: 30px 5px;}
 .list-item {background-color: var(--primaty-bg-color);}
+.team-title {margin-bottom: 10px;}
 
 /* --- Filter Buttons ---  */
 .filter-button {padding: 6px 22px; font-weight: 500;
