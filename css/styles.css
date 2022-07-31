@@ -189,19 +189,12 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
     color: var(--primary-text-color)}
     .portfolio-list {display: flex; flex-wrap: wrap;} 
 .portfolio-container {border: 1px solid #eeeeee;}
-.portfolio-list {padding-bottom: 94px;}
+.portfolio-list {padding-bottom: 94px; gap: 30px;}
 .portfolio-container {padding: 20px 24px;}
-.portfolio-item {width: 370px;}
-/* .portfolio-link:hover, .portfolio-link:focus */
+.portfolio-item {width: cacl ((100% - 20px)/3);}
 
-/* {box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);} */
-.portfolio-item > a {display: inline-block;}
-.portfolio-item > .portfolio-link:hover, .portfolio-item > .portfolio-link:focus {
-    border: 1px solid #000000;}
-[href=""]
+.filter-button:hover, .filter-button:focus {
+    color: var(--filterbutton-bg-color);
+    background-color: var(--filterbutton-secondbg-color);}
 
-.portfolio-list {gap: 30px;}
-
-.element {width: cacl ((100% - 60px)/3);}
-.element:ntn-child(3n) {margin-right: 30px;}
-.element:nth-last-child(-n + 3) {margin-bottom: 30px;}
+.portfolio-item:hover, .portfolio-item:focus {}
