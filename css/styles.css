@@ -26,8 +26,8 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .list {list-style: none; margin: 0; padding-left: 0;}
 .link, .header-logo {text-decoration: none;}
 
-.container {width: 1200px; padding: 0 15px; margin: 0 auto; outline: 2px solid red;}
-.container-second {width: 1200px; padding: 0 15px; margin: 0 auto; outline: 2px solid red;}
+.container {width: 1200px; padding: 0 15px; margin: 0 auto;}
+.container-second {width: 1200px; padding: 0 15px; margin: 0 auto;}
 
 .visually-hidden {position: absolute;
     white-space: nowrap;
@@ -191,10 +191,12 @@ p, h1, h2, h3, h4, h5, h6 {margin: 0px}
 .portfolio-container {border: 1px solid #eeeeee;}
 .portfolio-list {padding-bottom: 94px; gap: 30px;}
 .portfolio-container {padding: 20px 24px;}
-.portfolio-item {width: cacl ((100% - 20px)/3);}
+.portfolio-item {width: cacl ((100% - 60px)/3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
 .filter-button:hover, .filter-button:focus {
     color: var(--filterbutton-bg-color);
     background-color: var(--filterbutton-secondbg-color);}
 
-.portfolio-item:hover, .portfolio-item:focus {}
+/* -- ???? Почему смещается я понимаю, а как сделать так чтоб не смещалась???? -- */
+/* .portfolio-item:hover, .portfolio-item:focus {border-right: 1px solid #000000; margin: auto;} */
