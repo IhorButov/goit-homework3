@@ -157,7 +157,7 @@ html {box-sizing: border-box;}
 
 /* --- Галерея --- */
 .section-gallery {padding: 0 0 94px 0;}
-.gallery-list {display: inline-flex;}
+.gallery-list {display: flex;}
 .gallery-list .gallery-item:not(:last-child) {margin-right: 30px;}
 
 
